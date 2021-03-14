@@ -9,13 +9,19 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from "@angular/material/card";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ErrorComponent } from './error/error.component';
+import { ListComponent } from './list/list.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BioComponent,
     LoginComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ErrorComponent,
+    ListComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
