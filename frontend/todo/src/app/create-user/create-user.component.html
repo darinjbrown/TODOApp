@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-header >Create New User</mat-card-header>
+  <mat-card-content>
+
+  </mat-card-content>
+  <mat-card-content>
+    Username: <label>
+    <input type="text" name="username"  [(ngModel)]="username">
+  </label>
+    Password: <label>
+    <input type="password" name="password" [(ngModel)]="password">
+  </label>
+    <button (click)="handleCreate()" >Create</button>
+
+  </mat-card-content>
+
+</mat-card>
+
+<p></p>
+<p></p>
+
+<h2>
+  {{message}}
+</h2>
