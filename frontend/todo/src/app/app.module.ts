@@ -10,8 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from "@angular/material/card";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ErrorComponent } from './error/error.component';
-import { ListComponent } from './list/list.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { ListTodosComponent } from './list-todos/list-todos.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +20,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     LoginComponent,
     WelcomeComponent,
     ErrorComponent,
-    ListComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    ListTodosComponent
   ],
   imports: [
     BrowserModule,

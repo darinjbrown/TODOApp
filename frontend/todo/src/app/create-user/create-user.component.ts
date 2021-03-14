@@ -9,10 +9,14 @@ export class CreateUserComponent implements OnInit {
   username = ''
   password = ''
   message = ''
+  initialUser = {
+    uname: 'Admin',
+    pword: 'Fake1'
+  }
   invalidUsername = false
-  user!: { uname: string; pword: string; };
-  users = [this.user]
+  users = [this.initialUser]
   userExists = false
+
 
   constructor() {  }
 
@@ -28,11 +32,14 @@ export class CreateUserComponent implements OnInit {
     }else if (this.password.length < 5) {
       this.message = "Enter a password at least 5 characters long"
     }else {
-      this.user.uname = this.username
-      this.user.pword = this.password
-      this.users.push(this.user)
+      var user = {
+        uname : this.username,
+        pword : this.password
+      }
+      this.users.push(user)
       this.message = "User Created"
     }
+    console.log(this.users)
   }
 
 }
