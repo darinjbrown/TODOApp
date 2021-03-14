@@ -29,7 +29,7 @@ import { ListTodosComponent } from './list-todos/list-todos.component';
     BrowserAnimationsModule,
     MatCardModule,
     ReactiveFormsModule,
-    FormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
