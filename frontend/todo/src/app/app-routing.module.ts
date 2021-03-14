@@ -5,6 +5,7 @@ import {LoginComponent} from "./login/login.component";
 import {ErrorComponent} from "./error/error.component";
 import {CreateUserComponent} from "./create-user/create-user.component";
 import {ListTodosComponent} from "./list-todos/list-todos.component";
+import {BioComponent} from "./bio/bio.component";
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'create', component: CreateUserComponent},
   { path: 'todos', component: ListTodosComponent},
+  { path: 'contact', component: BioComponent},
   { path: '**', component: ErrorComponent}
 ];
 
