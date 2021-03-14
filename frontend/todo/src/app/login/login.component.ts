@@ -24,7 +24,9 @@ export class LoginComponent implements OnInit {
     if(!this.invalidLogin){
       this.router.navigate(['welcome', this.username]);
     }
-
+  }
+  handleCreate(){
+    this.router.navigate(['create'])
   }
 
 }

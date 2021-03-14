@@ -1,6 +1,8 @@
 <mat-card>
-  <mat-card-header >LOGIN</mat-card-header>
-  <small *ngIf="invalidLogin">{{errorMessage}}</small>
+  <mat-card-header >Create New User</mat-card-header>
+  <mat-card-content>
+
+  </mat-card-content>
   <mat-card-content>
     Username: <label>
     <input type="text" name="username"  [(ngModel)]="username">
@@ -8,10 +10,7 @@
     Password: <label>
     <input type="password" name="password" [(ngModel)]="password">
   </label>
-    <button (click)="handleLogin()" >Login</button>
-    <p></p>
-    <button (click)="handleCreate()">Create New User</button>
-
+    <button (click)="handleCreate()" >Create</button>
 
   </mat-card-content>
 
